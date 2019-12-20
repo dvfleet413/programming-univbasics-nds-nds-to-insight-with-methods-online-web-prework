@@ -7,9 +7,11 @@ require 'pp'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {}
+  result = {
+    
+  }
   nil
-  #pp nds
+  pp nds
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
