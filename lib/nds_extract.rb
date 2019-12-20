@@ -12,9 +12,13 @@ def directors_totals(nds)
   director_index = 0
   
   while director_index < nds.length do
+    #puts "nds[#{director_index}] prints..."
+    #pp nds[director_index]
     
-    puts "nds[#{director_index}] prints..."
-    pp nds[director_index]
+    name_key = nds[director_index][:name] 
+    director_total = gross_for_director(nds[director_index])
+    
+    result[name_key] = director_total
     
     director_index += 1
   end
