@@ -7,9 +7,17 @@ require 'pp'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {
-    
-  }
+  result = {}
+  
+  director_index = 0
+  
+  while director_index < nds[director_index].length do
+    name = nds[director_index][:name]
+    result[name] = gross_for_director(nds[director_index])
+    director_index += 1
+  end
+  
+
   nil
   pp nds
 end
